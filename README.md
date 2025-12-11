@@ -2,10 +2,6 @@
 
 ### Part 1
 
-Implement a NestJS application that:
-
-- Using [Alchemy Webhooks](https://www.alchemy.com/docs/reference/webhooks-overview) to listen for ERC20 Transfer events and notify via HTTP our NestJS application
-- NestJS application to store the received data in a DB(MongoDB, PostgreSQL, etc)
 - Implement GET endpoint that returns transaction history with the following filters:
     - Symbol
     - Sender
