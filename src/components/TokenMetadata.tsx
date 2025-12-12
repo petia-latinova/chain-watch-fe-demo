@@ -51,7 +51,9 @@ const TokenMetadata: React.FC<TokenMetadataProps> = ({ symbol }) => {
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={4} sx={{ mt: 2 }}>
             <Box sx={{ flex: 1 }}>
               <Typography variant="body2" color="textSecondary">Contract Address:</Typography>
-              <Typography variant="body1" sx={{ fontWeight: 'bold' }}>{metadata.contractAddress.slice(0, 10)}...{metadata.contractAddress.slice(-4)}</Typography>
+              <Typography variant="body1" sx={{ fontWeight: 'bold' }}>
+                {metadata.contractAddress?.slice(0, 10)}...{metadata.contractAddress?.slice(-4)}
+              </Typography>
             </Box>
             <Box sx={{ flex: 1 }}>
               <Typography variant="body2" color="textSecondary">Decimals:</Typography>
